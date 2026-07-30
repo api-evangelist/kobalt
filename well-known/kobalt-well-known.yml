@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.kobaltmusic.com/.well-known/
+host: https://www.kobaltmusic.com
+documents:
+- path: /.well-known/security.txt
+  standard: RFC 9116
+  status: 200
+  file: kobalt-security.txt
+  notes: Contact security@ktech.com (KTech, the shared rights-platform arm serving
+    Kobalt Music Publishing and AMRA). Expires field is 2025-05-01 and is therefore
+    stale as of this probe.
+- path: /.well-known/openid-configuration
+  standard: OpenID Connect Discovery
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  standard: RFC 8414
+  status: 404
+- path: /.well-known/api-catalog
+  standard: RFC 9727
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/change-password
+  standard: change-password well-known URL
+  status: 404
+- path: /.well-known/gpc.json
+  standard: Global Privacy Control
+  status: 404
+- path: /.well-known/dnt-policy.txt
+  status: 404
+related_hosts:
+- host: https://www.ktech.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    notes: Identical contact (security@ktech.com); canonical points at
+      https://ktech.com/.well-known/security.txt. Not saved separately — same
+      document as the Kobalt copy.
+notes: Kobalt publishes no API discovery documents. The corporate site is behind
+  Cloudflare bot protection (HTML paths return 403 to non-browser clients); static
+  /.well-known/ and /robots.txt paths are served normally.

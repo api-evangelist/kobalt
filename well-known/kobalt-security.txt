@@ -1,0 +1,4 @@
+Contact: mailto:security@ktech.com
+Expires: 2025-05-01T22:59:00.000Z
+Preferred-Languages: en
+Canonical: https://www.kobaltmusic.com/.well-known/security.txt

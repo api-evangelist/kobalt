@@ -1,0 +1,51 @@
+# Kobalt
+
+> Kobalt Music Group is an independent music rights management and administrative
+> publishing company founded in 2000 by Willard Ahdritz, with offices in New York
+> and London. It administers copyrights rather than owning them, operating Kobalt
+> Music Publishing, a neighbouring rights division, and AMRA (the American
+> Mechanical Rights Agency). Its rights and royalty processing runs on KTech, a
+> shared technology platform built to serve both Kobalt Music Publishing and AMRA,
+> with songwriters and rightsholders accessing statements and analytics through
+> the Kobalt Portal.
+
+Kobalt does not publish a public developer program. As of the 2026-07-19 probe
+there is no developer portal, no API documentation, no OpenAPI/AsyncAPI
+description, and no /.well-known/ API discovery surface on kobaltmusic.com. The
+Kobalt Portal is an authenticated client application for signed songwriters and
+rightsholders, not an open API. Any integration is arranged through a commercial
+relationship with Kobalt or KTech.
+
+## Company
+
+- [Kobalt Music](https://www.kobaltmusic.com): Corporate site for Kobalt Music
+  Group — publishing, neighbouring rights, and rights administration services.
+- [KTech](https://www.ktech.com): The rights and content management platform
+  Kobalt built to process music micro-transactions, serving Kobalt Music
+  Publishing and AMRA.
+- [AMRA](https://www.amra.com): The digital-first global collection society
+  Kobalt acquired in 2014.
+
+## Client surfaces
+
+- [Kobalt Portal](https://portal.kobaltmusic.com): Authenticated portal where
+  Kobalt songwriters and rightsholders view royalty statements and analytics.
+  Login-gated; no public API.
+
+## Security
+
+- [security.txt](https://www.kobaltmusic.com/.well-known/security.txt): RFC 9116
+  contact for vulnerability reports — security@ktech.com.
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/kobalt/refs/heads/main/apis.yml): The APIs.json index for this profile.
+- [well-known/kobalt-well-known.yml](https://raw.githubusercontent.com/api-evangelist/kobalt/refs/heads/main/well-known/kobalt-well-known.yml): Probe results for the /.well-known/ discovery surface.
+- [security/kobalt-domain-security.yml](https://raw.githubusercontent.com/api-evangelist/kobalt/refs/heads/main/security/kobalt-domain-security.yml): TLS, HSTS, DNSSEC, CAA, SPF, and DMARC probe.
+- [security/kobalt-vulnerability-disclosure.yml](https://raw.githubusercontent.com/api-evangelist/kobalt/refs/heads/main/security/kobalt-vulnerability-disclosure.yml): Vulnerability disclosure contact captured from security.txt.
+
+<!--
+generated: '2026-07-19'
+method: generated
+source: apis.yml + repo artifacts (no /llms.txt published — https://www.kobaltmusic.com/llms.txt returned 404)
+-->
