@@ -1,21 +1,48 @@
 aid: kobalt
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kobalt.png
 name: Kobalt
-description: 'Kobalt is a company surfaced as a portfolio company of gv, version-one-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Kobalt Music Group is an independent music rights management and administrative
+  publishing company founded in 2000 by Willard Ahdritz, operating from New York and
+  London. Unlike traditional publishers it administers copyrights rather than owning
+  them, running Kobalt Music Publishing, a neighbouring rights division, and AMRA,
+  the digital-first collection society it acquired in 2014. Royalty and rights processing
+  runs on KTech, the rights and content management platform built to independently
+  serve both Kobalt Music Publishing and AMRA at the scale of billions of music micro-transactions,
+  with songwriters and rightsholders viewing statements and analytics through the authenticated
+  Kobalt Portal. Kobalt publishes no public developer program: a 2026-07-19 probe found
+  no developer portal, no API documentation, no OpenAPI or AsyncAPI description, and
+  no API discovery documents under /.well-known/. Integration is arranged commercially
+  through Kobalt or KTech rather than through a self-service API.'
 url: https://raw.githubusercontent.com/api-evangelist/kobalt/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - gv
 - version-one-ventures
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Music
+- Music Publishing
+- Rights Management
+- Royalties
+- Copyright
+- Media and Entertainment
 - Enterprise
 apis: []
 maintainers:
@@ -25,4 +52,23 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://kobaltmusic.com
+  url: https://www.kobaltmusic.com
+- type: Login
+  url: https://portal.kobaltmusic.com
+- type: WellKnown
+  url: well-known/kobalt-well-known.yml
+- type: SecurityTxt
+  url: well-known/kobalt-security.txt
+- type: Security
+  url: https://www.kobaltmusic.com/.well-known/security.txt
+- type: VulnerabilityDisclosure
+  url: security/kobalt-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/kobalt-domain-security.yml
+- type: LLMsTxt
+  url: llms/kobalt-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
